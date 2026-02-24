@@ -43,10 +43,38 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardTilt();
   initCounters();
   initFilters();
+  initThemeToggle();
   loadGitHubData();
   renderLocalProjects();
   initVideoPlayers();
 });
+
+// ─── Theme Toggle (Light/Dark) ───────────────────
+function initThemeToggle() {
+  const root = document.documentElement;
+  const toggleKey = 'vipin-theme';
+  const stored = window.localStorage.getItem(toggleKey);
+
+  if (stored === 'dark') {
+    root.classList.add('kc-theme--dark');
+  }
+
+  const nav = document.querySelector('.kc-nav__inner');
+  if (!nav) return;
+
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'kc-theme-toggle';
+  btn.setAttribute('aria-label', 'Toggle theme');
+  btn.innerHTML = '<span class="kc-theme-toggle__icon">☾</span>';
+
+  btn.addEventListener('click', () => {
+    const isDark = root.classList.toggle('kc-theme--dark');
+    window.localStorage.setItem(toggleKey, isDark ? 'dark' : 'light');
+  });
+
+  nav.appendChild(btn);
+}
 
 // ─── Navigation ───────────────────────────────────
 function initNav() {

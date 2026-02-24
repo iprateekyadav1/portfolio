@@ -1,0 +1,1100 @@
+{
+  "search_date": "2026-02-18T22:24:24.653835",
+  "dates_searched": [
+    "2026-03-08",
+    "2026-03-09",
+    "2026-03-10",
+    "2026-03-11",
+    "2026-03-12"
+  ],
+  "booking_links": {
+    "2026-03-08": {
+      "label": "March 8 (Sun)",
+      "aggregators": {
+        "Google Flights": "https://www.google.com/travel/flights?q=flights+from+DEL+to+YYZ+on+2026-03-08",
+        "Skyscanner": "https://www.skyscanner.ca/transport/flights/del/yyz/260308/",
+        "Kayak": "https://www.kayak.com/flights/DEL-YYZ/2026-03-08?sort=price_a",
+        "Momondo": "https://www.momondo.com/flight-search/DEL-YYZ/2026-03-08?sort=price_a"
+      },
+      "airlines": {
+        "Emirates (via Dubai)": "https://www.emirates.com/flights/search?origin=DEL&destination=YYZ&departureDate=2026-03-08&adult=1",
+        "Qatar Airways (via Doha)": "https://www.qatarairways.com/en/booking.html?origins=DEL&destinations=YYZ&departureDates=2026-03-08&pax=1",
+        "Etihad (via Abu Dhabi)": "https://www.etihad.com/en/fly-etihad/book?departure=DEL&arrival=YYZ&date=2026-03-08&passengers=1",
+        "Turkish Airlines (via IST)": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+        "Air Canada (Direct possible)": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+        "Air India": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+        "Lufthansa (via Frankfurt)": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+        "British Airways (via London)": "https://www.britishairways.com/travel/book/public/en_in?origin=DEL&destination=YYZ&departureDate=2026-03-08",
+        "KLM (via Amsterdam)": "https://www.klm.com/search/flights?origin=DEL&destination=YYZ&departureDate=2026-03-08&pax=1",
+        "Air France (via Paris)": "https://www.airfrance.in/search/offer?origin=DEL&destination=YYZ&outboundDate=2026-03-08&pax=1"
+      }
+    },
+    "2026-03-09": {
+      "label": "March 9 (Mon)",
+      "aggregators": {
+        "Google Flights": "https://www.google.com/travel/flights?q=flights+from+DEL+to+YYZ+on+2026-03-09",
+        "Skyscanner": "https://www.skyscanner.ca/transport/flights/del/yyz/260309/",
+        "Kayak": "https://www.kayak.com/flights/DEL-YYZ/2026-03-09?sort=price_a",
+        "Momondo": "https://www.momondo.com/flight-search/DEL-YYZ/2026-03-09?sort=price_a"
+      },
+      "airlines": {
+        "Emirates (via Dubai)": "https://www.emirates.com/flights/search?origin=DEL&destination=YYZ&departureDate=2026-03-09&adult=1",
+        "Qatar Airways (via Doha)": "https://www.qatarairways.com/en/booking.html?origins=DEL&destinations=YYZ&departureDates=2026-03-09&pax=1",
+        "Etihad (via Abu Dhabi)": "https://www.etihad.com/en/fly-etihad/book?departure=DEL&arrival=YYZ&date=2026-03-09&passengers=1",
+        "Turkish Airlines (via IST)": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+        "Air Canada (Direct possible)": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+        "Air India": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+        "Lufthansa (via Frankfurt)": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+        "British Airways (via London)": "https://www.britishairways.com/travel/book/public/en_in?origin=DEL&destination=YYZ&departureDate=2026-03-09",
+        "KLM (via Amsterdam)": "https://www.klm.com/search/flights?origin=DEL&destination=YYZ&departureDate=2026-03-09&pax=1",
+        "Air France (via Paris)": "https://www.airfrance.in/search/offer?origin=DEL&destination=YYZ&outboundDate=2026-03-09&pax=1"
+      }
+    },
+    "2026-03-10": {
+      "label": "March 10 (Tue)",
+      "aggregators": {
+        "Google Flights": "https://www.google.com/travel/flights?q=flights+from+DEL+to+YYZ+on+2026-03-10",
+        "Skyscanner": "https://www.skyscanner.ca/transport/flights/del/yyz/260310/",
+        "Kayak": "https://www.kayak.com/flights/DEL-YYZ/2026-03-10?sort=price_a",
+        "Momondo": "https://www.momondo.com/flight-search/DEL-YYZ/2026-03-10?sort=price_a"
+      },
+      "airlines": {
+        "Emirates (via Dubai)": "https://www.emirates.com/flights/search?origin=DEL&destination=YYZ&departureDate=2026-03-10&adult=1",
+        "Qatar Airways (via Doha)": "https://www.qatarairways.com/en/booking.html?origins=DEL&destinations=YYZ&departureDates=2026-03-10&pax=1",
+        "Etihad (via Abu Dhabi)": "https://www.etihad.com/en/fly-etihad/book?departure=DEL&arrival=YYZ&date=2026-03-10&passengers=1",
+        "Turkish Airlines (via IST)": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+        "Air Canada (Direct possible)": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+        "Air India": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+        "Lufthansa (via Frankfurt)": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+        "British Airways (via London)": "https://www.britishairways.com/travel/book/public/en_in?origin=DEL&destination=YYZ&departureDate=2026-03-10",
+        "KLM (via Amsterdam)": "https://www.klm.com/search/flights?origin=DEL&destination=YYZ&departureDate=2026-03-10&pax=1",
+        "Air France (via Paris)": "https://www.airfrance.in/search/offer?origin=DEL&destination=YYZ&outboundDate=2026-03-10&pax=1"
+      }
+    },
+    "2026-03-11": {
+      "label": "March 11 (Wed)",
+      "aggregators": {
+        "Google Flights": "https://www.google.com/travel/flights?q=flights+from+DEL+to+YYZ+on+2026-03-11",
+        "Skyscanner": "https://www.skyscanner.ca/transport/flights/del/yyz/260311/",
+        "Kayak": "https://www.kayak.com/flights/DEL-YYZ/2026-03-11?sort=price_a",
+        "Momondo": "https://www.momondo.com/flight-search/DEL-YYZ/2026-03-11?sort=price_a"
+      },
+      "airlines": {
+        "Emirates (via Dubai)": "https://www.emirates.com/flights/search?origin=DEL&destination=YYZ&departureDate=2026-03-11&adult=1",
+        "Qatar Airways (via Doha)": "https://www.qatarairways.com/en/booking.html?origins=DEL&destinations=YYZ&departureDates=2026-03-11&pax=1",
+        "Etihad (via Abu Dhabi)": "https://www.etihad.com/en/fly-etihad/book?departure=DEL&arrival=YYZ&date=2026-03-11&passengers=1",
+        "Turkish Airlines (via IST)": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+        "Air Canada (Direct possible)": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+        "Air India": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+        "Lufthansa (via Frankfurt)": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+        "British Airways (via London)": "https://www.britishairways.com/travel/book/public/en_in?origin=DEL&destination=YYZ&departureDate=2026-03-11",
+        "KLM (via Amsterdam)": "https://www.klm.com/search/flights?origin=DEL&destination=YYZ&departureDate=2026-03-11&pax=1",
+        "Air France (via Paris)": "https://www.airfrance.in/search/offer?origin=DEL&destination=YYZ&outboundDate=2026-03-11&pax=1"
+      }
+    },
+    "2026-03-12": {
+      "label": "March 12 (Thu)",
+      "aggregators": {
+        "Google Flights": "https://www.google.com/travel/flights?q=flights+from+DEL+to+YYZ+on+2026-03-12",
+        "Skyscanner": "https://www.skyscanner.ca/transport/flights/del/yyz/260312/",
+        "Kayak": "https://www.kayak.com/flights/DEL-YYZ/2026-03-12?sort=price_a",
+        "Momondo": "https://www.momondo.com/flight-search/DEL-YYZ/2026-03-12?sort=price_a"
+      },
+      "airlines": {
+        "Emirates (via Dubai)": "https://www.emirates.com/flights/search?origin=DEL&destination=YYZ&departureDate=2026-03-12&adult=1",
+        "Qatar Airways (via Doha)": "https://www.qatarairways.com/en/booking.html?origins=DEL&destinations=YYZ&departureDates=2026-03-12&pax=1",
+        "Etihad (via Abu Dhabi)": "https://www.etihad.com/en/fly-etihad/book?departure=DEL&arrival=YYZ&date=2026-03-12&passengers=1",
+        "Turkish Airlines (via IST)": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+        "Air Canada (Direct possible)": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+        "Air India": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+        "Lufthansa (via Frankfurt)": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+        "British Airways (via London)": "https://www.britishairways.com/travel/book/public/en_in?origin=DEL&destination=YYZ&departureDate=2026-03-12",
+        "KLM (via Amsterdam)": "https://www.klm.com/search/flights?origin=DEL&destination=YYZ&departureDate=2026-03-12&pax=1",
+        "Air France (via Paris)": "https://www.airfrance.in/search/offer?origin=DEL&destination=YYZ&outboundDate=2026-03-12&pax=1"
+      }
+    }
+  },
+  "flights": [
+    {
+      "title": "$464 Cheap flights from Delhi to Toronto (DEL to YYZ) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/del/yyz/delhi-to-toronto",
+      "description": "Secure a cheap one-way flight <strong>from $464</strong> or cheap return flight from $836 from Indira Gandhi Intl. Airport (DEL) to Pearson Intl. Airport (YYZ) with Expedia.",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport from $433. Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto from $431. Fly from New Delhi on <strong>Cathay Pacific</strong>, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "New Delhi (DEL) to Toronto (YYZ) Flights | Fares Starting @\u20b962503",
+      "url": "https://www.cleartrip.com/flight-schedule/new-delhi-toronto-flights.html",
+      "description": "<strong>Use code &#x27;CTINT&#x27; to get up to \u20b910,000 off on New Delhi to Toronto flight tickets</strong>. Get the lowest fares, live ticket updates, and top flight deals on Cleartrip.",
+      "price": "\u20b962503",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "$464 Cheap Delhi to Toronto flights (DEL to YTO) | Orbitz",
+      "url": "https://www.orbitz.com/lp/flights/180000/178314/delhi-to-toronto",
+      "description": "Cheap flights from Delhi to Toronto (DEL - YTO): Compare last minute flight deals, direct flights and round-trip flights with Orbitz today!",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "Direct",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "Delhi DEL to Toronto YTO Cheap Flights \u2708, Fares @ USD 512 | MakeMyTrip USA Flights",
+      "url": "https://www.makemytrip.global/international-flights/united_states/delhi-toronto-cheap-airtickets.html",
+      "description": "Doha (8)USD 858 \u00b7 Dubai (2)USD 1,397 \u00b7 Frankfurt (5)USD 1,308 \u00b7 Hong Kong (3)USD 572 \u00b7 Istanbul (1)<strong>USD 1,543</strong> \u00b7 Jeddah (1)USD 1,262 \u00b7 London - Heathrow Apt (7)USD 525 \u00b7 Minneapolis (3)USD 525 \u00b7 Montreal (16)USD 710 \u00b7 Mumbai (2)USD 907",
+      "price": "usd 512",
+      "airline": "\u2014",
+      "route": "Via Dubai",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "Flights from Delhi (DEL) to Toronto (YYZ) | Etihad Airways",
+      "url": "https://www.etihad.com/en-in/flights/flights-from-new-delhi-to-toronto",
+      "description": "Book Delhi to Toronto flights with Etihad Airways. Fly economy, business or first class with us and enjoy premium travel experience from Delhi (DEL) to Toronto (YYZ).",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 45,215 | Air India",
+      "url": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 45,215</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "C$ 713+ Flights from New Delhi to Toronto | Cheapflights",
+      "url": "https://www.cheapflights.ca/flights-to-Toronto/Delhi/",
+      "description": "Book flights from Indira Gandhi Intl (DEL) to Toronto (YTO) starting at <strong>C$ 713</strong>. Search real-time flight deals from New Delhi to Toronto on Cheapflights.ca.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "C$ 720 CHEAP FLIGHTS from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.ca.kayak.com/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi from <strong>C$ 720</strong>. Fly from Toronto on Air Canada, China Eastern and more. Search for New Delhi flights on KAYAK now to find the best deal.",
+      "price": "\u2014",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Fly from Toronto to New Delhi on multiple airlines... Search and find deals on flights to New Delhi.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "$315 CHEAP FLIGHTS to New Delhi in 2026 | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/United-States-US0/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi (DEL) <strong>from $315.</strong> Fly to New Delhi with Air India, Delta &amp; more. Chicago from $315; Seattle from $341; New York from $345 | KAYAK",
+      "price": "$315",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-08"
+    },
+    {
+      "title": "$464 Cheap flights from Delhi to Toronto (DEL to YYZ) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/del/yyz/delhi-to-toronto",
+      "description": "Secure a cheap one-way flight <strong>from $464</strong> or cheap return flight from $836 from Indira Gandhi Intl. Airport (DEL) to Pearson Intl. Airport (YYZ) with Expedia.",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport from $433. Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto from $431. Fly from New Delhi on <strong>Cathay Pacific</strong>, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "New Delhi (DEL) to Toronto (YYZ) Flights | Fares Starting @\u20b962503",
+      "url": "https://www.cleartrip.com/flight-schedule/new-delhi-toronto-flights.html",
+      "description": "<strong>Use code &#x27;CTINT&#x27; to get up to \u20b910,000 off on New Delhi to Toronto flight tickets</strong>. Get the lowest fares, live ticket updates, and top flight deals on Cleartrip.",
+      "price": "\u20b962503",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 48,356 | Air India",
+      "url": "https://www.airindia.com/en/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 48,356</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Delhi DEL to Toronto YTO Cheap Flights \u2708, Fares @ USD 512 | MakeMyTrip USA Flights",
+      "url": "https://www.makemytrip.global/international-flights/united_states/delhi-toronto-cheap-airtickets.html",
+      "description": "Doha (8)USD 858 \u00b7 Dubai (2)USD 1,397 \u00b7 Frankfurt (5)USD 1,308 \u00b7 Hong Kong (3)USD 572 \u00b7 Istanbul (1)<strong>USD 1,543</strong> \u00b7 Jeddah (1)USD 1,262 \u00b7 London - Heathrow Apt (7)USD 525 \u00b7 Minneapolis (3)USD 525 \u00b7 Montreal (16)USD 710 \u00b7 Mumbai (2)USD 907",
+      "price": "usd 512",
+      "airline": "\u2014",
+      "route": "Via Dubai",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Find Cheap Flights from New Delhi to Toronto (DEL - YTO) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-new-delhi-to-toronto.html",
+      "description": "The cheapest Emirates flight from New Delhi to Toronto is <strong>$1,269</strong>, flying from Feb 9 to Feb 22.",
+      "price": "$1,269",
+      "airline": "Emirates",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "C$ 713+ Flights from New Delhi to Toronto | Cheapflights",
+      "url": "https://www.cheapflights.ca/flights-to-Toronto/Delhi/",
+      "description": "Book flights from Indira Gandhi Intl (DEL) to Toronto (YTO) starting at <strong>C$ 713</strong>. Search real-time flight deals from New Delhi to Toronto on Cheapflights.ca.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Find Cheap Flights from Toronto to Dubai (YTO - DXB) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto-to-dubai.html",
+      "description": "The cheapest Emirates flight from Toronto to Dubai is <strong>$1,121</strong>, flying from Apr 9 to Apr 22.",
+      "price": "$1,121",
+      "airline": "Emirates",
+      "route": "Via Dubai",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "$1,033Delta \u00b7 Find Deal \u00b7 Thu, Dec 4 - Thu, Jan 22 \u00b7 6:00 am - 2:40 amYYZ-DEL \u00b7 34h 10m2 stops \u00b7 1:30 am - 4:25 pmDEL-YYZ \u00b7 25h 25m1 stop \u00b7 $1,097Delta \u00b7 Find Deal \u00b7 Thu, Dec 4 - Thu, Jan 22 \u00b7 2:09 pm - 2:40 amYYZ-DEL \u00b7 26h 01m2 stops \u00b7 1:30 am - 8:2",
+      "price": "$1,033",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "\u20b9 43,633 Cheap Flights from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.kayak.co.in/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi from <strong>\u20b9 43,633.</strong> Fly from Toronto on Air India, Cathay Pacific, China Eastern and more. Search for New Delhi flights on KAYAK now to find the best deal.",
+      "price": "\u2014",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Cheap Flights: Compare Flights & Flight Tickets | KAYAK",
+      "url": "https://www.kayak.co.in/flights",
+      "description": "Save money on airfare by searching for cheap flights on KAYAK. KAYAK compares flight deals on hundreds of airline tickets sites to find you the best prices.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "$464 Cheap flights from Delhi to Toronto (DEL to YYZ) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/del/yyz/delhi-to-toronto",
+      "description": "Secure a cheap one-way flight <strong>from $464</strong> or cheap return flight from $836 from Indira Gandhi Intl. Airport (DEL) to Pearson Intl. Airport (YYZ) with Expedia.",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport from $433. Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto from $431. Fly from New Delhi on <strong>Cathay Pacific</strong>, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "$603 Cheap flights from Toronto to Delhi (YYZ to DEL) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/yyz/del/toronto-to-delhi",
+      "description": "You could save 24% by buying your tickets for domestic flights at least a month in advance and 10% by booking international flights 2 months in advance. How to find cheap round-trip tickets from Toronto to Delhi \u00b7 Being flexible with your dates and u",
+      "price": "$603",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "New Delhi (DEL) to Toronto (YYZ) Flights | Fares Starting @\u20b962503",
+      "url": "https://www.cleartrip.com/flight-schedule/new-delhi-toronto-flights.html",
+      "description": "<strong>Use code &#x27;CTINT&#x27; to get up to \u20b910,000 off on New Delhi to Toronto flight tickets</strong>. Get the lowest fares, live ticket updates, and top flight deals on Cleartrip.",
+      "price": "\u20b962503",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "Delhi DEL to Toronto YTO Cheap Flights \u2708, Fares @ USD 512 | MakeMyTrip USA Flights",
+      "url": "https://www.makemytrip.global/international-flights/united_states/delhi-toronto-cheap-airtickets.html",
+      "description": "Doha (8)USD 858 \u00b7 Dubai (2)USD 1,397 \u00b7 Frankfurt (5)USD 1,308 \u00b7 Hong Kong (3)USD 572 \u00b7 Istanbul (1)<strong>USD 1,543</strong> \u00b7 Jeddah (1)USD 1,262 \u00b7 London - Heathrow Apt (7)USD 525 \u00b7 Minneapolis (3)USD 525 \u00b7 Montreal (16)USD 710 \u00b7 Mumbai (2)USD 907",
+      "price": "usd 512",
+      "airline": "\u2014",
+      "route": "Via Dubai",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "Flights from Delhi (DEL) to Toronto (YYZ) | Etihad Airways",
+      "url": "https://www.etihad.com/en/flights/flights-from-new-delhi-to-toronto",
+      "description": "Book Delhi to Toronto flights with Etihad Airways. Fly economy, business or first class with us and enjoy premium travel experience from Delhi (DEL) to Toronto (YYZ).",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 45,215 | Air India",
+      "url": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 45,215</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "Find Cheap Flights from Toronto to Dubai (YTO - DXB) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto-to-dubai.html",
+      "description": "Use Google Flights to find cheap flights from Toronto to Dubai, and book tickets for your next trip.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "Via Dubai",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "C$ 720 CHEAP FLIGHTS from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.ca.kayak.com/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi from <strong>C$ 720</strong>. Fly from Toronto on Air Canada, China Eastern and more. Search for New Delhi flights on KAYAK now to find the best deal.",
+      "price": "\u2014",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Fly from Toronto to New Delhi on multiple airlines... Search and find deals on flights to New Delhi.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "$315 CHEAP FLIGHTS to New Delhi in 2026 | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/United-States-US0/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi (DEL) <strong>from $315.</strong> Fly to New Delhi with Air India, Delta &amp; more. Chicago from $315; Seattle from $341; New York from $345 | KAYAK",
+      "price": "$315",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-10"
+    },
+    {
+      "title": "$464 Cheap flights from Delhi to Toronto (DEL to YYZ) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/del/yyz/delhi-to-toronto",
+      "description": "Secure a cheap one-way flight <strong>from $464</strong> or cheap return flight from $836 from Indira Gandhi Intl. Airport (DEL) to Pearson Intl. Airport (YYZ) with Expedia.",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport from $433. Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto from $431. Fly from New Delhi on <strong>Cathay Pacific</strong>, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "New Delhi (DEL) to Toronto (YYZ) Flights | Fares Starting @\u20b962503",
+      "url": "https://www.cleartrip.com/flight-schedule/new-delhi-toronto-flights.html",
+      "description": "<strong>Use code &#x27;CTINT&#x27; to get up to \u20b910,000 off on New Delhi to Toronto flight tickets</strong>. Get the lowest fares, live ticket updates, and top flight deals on Cleartrip.",
+      "price": "\u20b962503",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 48,356 | Air India",
+      "url": "https://www.airindia.com/en/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 48,356</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "Delhi DEL to Toronto YTO Cheap Flights \u2708, Fares @ USD 512 | MakeMyTrip USA Flights",
+      "url": "https://www.makemytrip.global/international-flights/united_states/delhi-toronto-cheap-airtickets.html",
+      "description": "Delhi to Toronto Cheap Flights - Book Delhi to Toronto flight tickets and get upto 20% cashback to wallet. Book Delhi Toronto flights at cheap airfares on MakeMyTrip. \ud835\udc02\ud835\udc1a\ud835\udc2c\ud835\udc21\ud835\udc1b\ud835\udc1a\ud835\udc1c\ud835\udc24 \ud835\udc0e\ud835\udc1f\ud835\udc1f\ud835\udc1e\ud835\udc2b \u2705 \ud835\udc02\ud835\udc28\ud835\udc2e\ud835\udc29\ud835\udc28\ud835\udc27 \ud835\udc02\ud835\udc28\ud835\udc1d\ud835\udc1e : \ud835\udc05\ud835\udc0b\ud835\udc18\ud835\udc08\ud835\udc0d\ud835\udc13 ...",
+      "price": "usd 512",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "C$ 713+ Flights from New Delhi to Toronto | Cheapflights",
+      "url": "https://www.cheapflights.ca/flights-to-Toronto/Delhi/",
+      "description": "Book flights from Indira Gandhi Intl (DEL) to Toronto (YTO) starting at <strong>C$ 713</strong>. Search real-time flight deals from New Delhi to Toronto on Cheapflights.ca.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "Find Cheap Flights from New Delhi to Toronto (DEL - YTO) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-new-delhi-to-toronto.html",
+      "description": "Use Google Flights to find cheap flights from New Delhi to Toronto, and book tickets for your next trip.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "Find Cheap Flights from Toronto to Dubai (YTO - DXB) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto-to-dubai.html",
+      "description": "The cheapest Qatar Airways flight from Toronto to Dubai is <strong>$1,043</strong>, flying from Feb 26 to Mar 11.",
+      "price": "$1,043",
+      "airline": "Qatar Airways",
+      "route": "Via Dubai",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Fly from Toronto to New Delhi on multiple airlines... Search and find deals on flights to New Delhi.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "C$ 720 CHEAP FLIGHTS from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.ca.kayak.com/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi from <strong>C$ 720</strong>. Fly from Toronto on Air Canada, China Eastern and more. Search for New Delhi flights on KAYAK now to find the best deal.",
+      "price": "\u2014",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "$315 CHEAP FLIGHTS to New Delhi in 2026 | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/United-States-US0/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi (DEL) <strong>from $315.</strong> Fly to New Delhi with Air India, Delta &amp; more. Chicago from $315; Seattle from $341; New York from $345 | KAYAK",
+      "price": "$315",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-11"
+    },
+    {
+      "title": "$464 Cheap flights from Delhi to Toronto (DEL to YYZ) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/del/yyz/delhi-to-toronto",
+      "description": "Secure a cheap one-way flight <strong>from $464</strong> or cheap return flight from $836 from Indira Gandhi Intl. Airport (DEL) to Pearson Intl. Airport (YYZ) with Expedia.",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport from $433. Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto from $431. Fly from New Delhi on <strong>Cathay Pacific</strong>, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "New Delhi (DEL) to Toronto (YYZ) Flights | Fares Starting @\u20b962503",
+      "url": "https://www.cleartrip.com/flight-schedule/new-delhi-toronto-flights.html",
+      "description": "<strong>Use code &#x27;CTINT&#x27; to get up to \u20b910,000 off on New Delhi to Toronto flight tickets</strong>. Get the lowest fares, live ticket updates, and top flight deals on Cleartrip.",
+      "price": "\u20b962503",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "$464 Cheap Delhi to Toronto flights (DEL to YTO) | Orbitz",
+      "url": "https://www.orbitz.com/lp/flights/180000/178314/delhi-to-toronto",
+      "description": "Cheap flights from Delhi to Toronto (DEL - YTO): Compare last minute flight deals, direct flights and round-trip flights with Orbitz today!",
+      "price": "$464",
+      "airline": "\u2014",
+      "route": "Direct",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Delhi DEL to Toronto YTO Cheap Flights \u2708, Fares @ USD 512 | MakeMyTrip USA Flights",
+      "url": "https://www.makemytrip.global/international-flights/united_states/delhi-toronto-cheap-airtickets.html",
+      "description": "Doha (8)USD 858 \u00b7 Dubai (2)USD 1,397 \u00b7 Frankfurt (5)USD 1,308 \u00b7 Hong Kong (3)USD 572 \u00b7 Istanbul (1)<strong>USD 1,543</strong> \u00b7 Jeddah (1)USD 1,262 \u00b7 London - Heathrow Apt (7)USD 525 \u00b7 Minneapolis (3)USD 525 \u00b7 Montreal (16)USD 710 \u00b7 Mumbai (2)USD 907",
+      "price": "usd 512",
+      "airline": "\u2014",
+      "route": "Via Dubai",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 45,215 | Air India",
+      "url": "https://www.airindia.com/en-us/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 45,215</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Flights from Delhi (DEL) to Toronto (YYZ) | Etihad Airways",
+      "url": "https://www.etihad.com/en-in/flights/flights-from-new-delhi-to-toronto",
+      "description": "Book Delhi to Toronto flights with Etihad Airways. Fly economy, business or first class with us and enjoy premium travel experience from Delhi (DEL) to Toronto (YYZ).",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Find Cheap Flights from New Delhi to Toronto (DEL - YTO) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-new-delhi-to-toronto.html",
+      "description": "Typical prices for the least expensive round-trip flights from New Delhi to Toronto per month. Insights are based on fares observed in the last 12 months.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Fly from Toronto to New Delhi on multiple airlines... Search and find deals on flights to New Delhi.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "C$ 720 CHEAP FLIGHTS from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.ca.kayak.com/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi from <strong>C$ 720</strong>. Fly from Toronto on Air Canada, China Eastern and more. Search for New Delhi flights on KAYAK now to find the best deal.",
+      "price": "\u2014",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "$315 CHEAP FLIGHTS to New Delhi in 2026 | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/United-States-US0/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "Find flights to New Delhi (DEL) <strong>from $315.</strong> Fly to New Delhi with Air India, Delta &amp; more. Chicago from $315; Seattle from $341; New York from $345 | KAYAK",
+      "price": "$315",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Cheap Emirates Delhi to Toronto Flight Tickets - Via.com",
+      "url": "https://in.via.com/flight-tickets/emirates-flights-from-delhi-to-toronto",
+      "description": "Book Cheap Emirates flights from Delhi to Toronto. Use Code VIAINTL &amp; get up to Rs.<strong>7000 Off</strong> on Emirates Delhi Toronto flights. Check Delhi to Toronto Emirates flight schedule, offers &amp; status on Via.com",
+      "price": "\u2014",
+      "airline": "Emirates",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Find Cheap Flights from Toronto to Dubai (YTO - DXB) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto-to-dubai.html",
+      "description": "The cheapest Emirates flight from Toronto to Dubai is <strong>$1,121</strong>, flying from Apr 9 to Apr 22.",
+      "price": "$1,121",
+      "airline": "Emirates",
+      "route": "Via Dubai",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Emirates Airline Flights",
+      "url": "https://www.makemytrip.com/international-flights/united_states/delhi-toronto-emirates_airline-tickets.html",
+      "description": "Book Cheap Delhi to Toronto with Emirates Airline Flights - offers best deals on Delhi to Toronto flight booking. Lowest airfare $ .",
+      "price": "\u2014",
+      "airline": "Emirates",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Qatar Airways(QR) flights from Delhi to Toronto-2026 Cheap Flights | Trip.com",
+      "url": "https://www.trip.com/hot/qatar-airways(qr)-flights-from-delhi-to-toronto/",
+      "description": "After crunching the numbers on our January flight calendar, it&#x27;s currently cheapest to fly from New Delhi to Toronto on January 30, 2026 with China Eastern Airlines, with prices starting at <strong>US$538</strong>.",
+      "price": "$538",
+      "airline": "Qatar Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Qatar Airways Flights, Airfare, Flight Status & Time Schedule",
+      "url": "https://www.yatra.com/international-flights/qatar-airways-booking-delhi-to-toronto-flights.html",
+      "description": "Book Qatar Airways flight tickets from Delhi to Toronto and get unbelievable discounts on Yatra.com. Check Delhi to Toronto Qatar Airways flights, flight status &amp; flight schedule at Yatra.com. Lowest fare Guaranteed on Qatar Airways flights from ",
+      "price": "\u2014",
+      "airline": "Qatar Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Book Flights & Travel the World | Qatar Airways",
+      "url": "https://www.qatarairways.com/en-us/homepage.html",
+      "description": "Book flights to destinations around the world with Qatar Airways &amp; fly on board an award-winning airline. Enjoy special fares, collect Avios &amp; more.",
+      "price": "\u2014",
+      "airline": "Qatar Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Flights from Delhi (DEL) to Toronto (YYZ) | Etihad Airways",
+      "url": "https://www.etihad.com/en-in/flights/flights-from-new-delhi-to-toronto",
+      "description": "Flight time: Our fastest flight to Toronto from New Delhi takes about <strong>21 hours and 15 minutes</strong>, with a stopover in Abu Dhabi.",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "Via Abu Dhabi",
+      "date": ""
+    },
+    {
+      "title": "Flights from Toronto (YYZ) to Delhi (DEL) | Etihad Airways",
+      "url": "https://www.etihad.com/en/flights/flights-from-toronto-to-new-delhi",
+      "description": "Flights per day: There are usually up to two one-stop flights per day from Toronto to New Delhi, depending on the day, with a layover in Abu Dhabi. Return flight: The earliest flight from New Delhi to Toronto usually departs in the morning, at around",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "Via Abu Dhabi",
+      "date": ""
+    },
+    {
+      "title": "Flights to Toronto (YYZ) - Find best flight deals & book direct | Etihad Airways",
+      "url": "https://www.etihad.com/en/flights/flights-to-toronto",
+      "description": "Book Toronto flights from key cities across Asia and Australia, with the option to stop in Abu Dhabi for added convenience. Here are some of the destinations you can fly from: New Delhi: There are usually up to two one-stop flights from New Delhi to ",
+      "price": "\u2014",
+      "airline": "Etihad Airways",
+      "route": "Direct",
+      "date": ""
+    },
+    {
+      "title": "Flights From Delhi to Toronto | Turkish Airlines",
+      "url": "https://www.turkishairlines.com/en/flights-from-delhi-to-toronto",
+      "description": "Visit our page to book a flight from Delhi to Toronto with Turkish Airlines privileges, for detailed information and to purchase now.",
+      "price": "\u2014",
+      "airline": "Turkish Airlines",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Flights From Toronto to Istanbul | Turkish Airlines",
+      "url": "https://www.turkishairlines.com/en/flights-from-toronto-to-istanbul",
+      "description": "Visit our page to book a flight from Toronto to Istanbul with Turkish Airlines privileges, for detailed information and to purchase now.",
+      "price": "\u2014",
+      "airline": "Turkish Airlines",
+      "route": "Via Istanbul",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Turkish Airlines Flight, Cheap Turkish Airlines Flight Ticket @ Goibibo",
+      "url": "https://www.goibibo.com/international-flights/delhi-to-toronto-turkish-airlines-airline-schedule/",
+      "description": "Compare and book Delhi to Toronto Turkish Airlines flight at lowest airfare from Goibibo. Find the best flight offers and discounts for your Delhi to Toronto Turkish Airlines flight tickets. Use coupon code FLYDREAM upto <strong>\u20b925000</strong> off.",
+      "price": "\u20b925000",
+      "airline": "Turkish Airlines",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Book flights from Delhi (DEL) to Toronto (YTO) | Air Canada",
+      "url": "https://www.aircanada.com/en-ca/flights-from-delhi-to-toronto",
+      "description": "Looking for flights from Delhi (DEL) to Toronto (YTO)? Fly Air Canada, voted &quot;Best Airline in North America&quot; by Skytrax and Global Traveler Magazine. Book your Delhi to Toronto flight today.",
+      "price": "\u2014",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Air Canada New Delhi (DEL) to Toronto (YYZ) Flight Ticket Booking @\u20b951264 | Cleartrip",
+      "url": "https://www.cleartrip.com/flight-booking/air-canada-new-delhi-toronto-flights.html",
+      "description": "Use code &#x27;CTINT&#x27; to get up to <strong>\u20b910,000</strong> off on Air Canada New Delhi (DEL) to Toronto (YYZ) flight tickets. Book now on Cleartrip for the lowest airfare and grab exclusive deals.",
+      "price": "\u20b951264",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$565 Cheap Air Canada flights from Delhi to Toronto (DEL to YYZ)",
+      "url": "https://www.travelocity.com/lp/flight-routes/air-canada-from-indira-gandhi-intl-to-pearson-intl/ac/del/yyz",
+      "description": "Air Canada flight deals and tickets from Delhi to Toronto (DEL to YYZ) <strong>from $565</strong>",
+      "price": "$565",
+      "airline": "Air Canada",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Flights Air India @ \u20b949515 | EaseMyTrip",
+      "url": "https://www.easemytrip.com/flights/air-india-tickets-delhi-del-to-toronto-ybz/",
+      "description": "You can book your Air India to travel from Delhi (DEL) to Toronto (YBZ) with ease and convenience at the starting fare of <strong>\u20b9 42922</strong> via EaseMyTrip. Usually, the price of an Air India ticket from Delhi to Toronto varies from <strong>\u20b9 4",
+      "price": "\u20b949515",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Flights, Ticket Price from INR 46,214 | Air India",
+      "url": "https://www.airindia.com/en-in/book-flights/delhi-to-toronto-flights",
+      "description": "Book Delhi to Toronto flights with Air India &amp; get flight tickets from <strong>INR 46,214</strong>. Use \ud835\udc00\ud835\udc08\ud835\udc12\ud835\udc00\ud835\udc15\ud835\udc04\ud835\udc11 \ud835\udc2d\ud835\udc28 \ud835\udc20\ud835\udc1e\ud835\udc2d \ud835\udc2e\ud835\udc29 \ud835\udc2d\ud835\udc28 \u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc28\ud835\udc1f\ud835\udc1f on air tickets and experience luxury and comfort on ...",
+      "price": "\u20b9\ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udfce",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Air India Flights",
+      "url": "https://www.makemytrip.com/international-flights/united_states/delhi-toronto-air_india-tickets.html",
+      "description": "Book Cheap Delhi to Toronto with Air India Flights - offers best deals on Delhi to Toronto flight booking. Lowest airfare $ .",
+      "price": "\u2014",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Flight from Delhi to Toronto | Lufthansa",
+      "url": "https://www.lufthansa.com/lhg/in/en/o-d/cy-cy/delhi-toronto",
+      "description": "We offer flights from Delhi to Toronto starting at <strong>\u20b9 87,844.</strong> \u2708 Find daily best prices on lufthansa.com.",
+      "price": "\u2014",
+      "airline": "Lufthansa",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Lufthansa Flights, Fare, Status & Time Schedule | MakeMyTrip USA Flight",
+      "url": "https://www.makemytrip.com/international-flights/united_states/delhi-toronto-lufthansa_airlines-tickets.html",
+      "description": "Book Cheap Delhi to Toronto with Lufthansa Flights - offers best deals on Delhi to Toronto flight booking. Lowest airfare <strong>$ 712</strong>.",
+      "price": "\u2014",
+      "airline": "Lufthansa",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi (DEL) to Toronto (YKZ) Lufthansa : Flights & Schedule information",
+      "url": "https://www.easemytrip.com/flights/lufthansa-tickets-delhi-del-to-toronto-ykz/",
+      "description": "You can book your Lufthansa to travel from Delhi (DEL) to Toronto (YKZ) with ease and convenience at the starting fare of <strong>\u20b9 34346</strong> via EaseMyTrip. Usually, the price of an Lufthansa ticket from Delhi to Toronto varies from <strong>\u20b9 3",
+      "price": "\u2014",
+      "airline": "Lufthansa",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto British Airways Flights, Fare, Status & Time Schedule | MakeMyTrip INTL Flight",
+      "url": "https://www.makemytrip.com/international-flights/delhi-toronto-british_airways-tickets.html",
+      "description": "Book Cheap Delhi to Toronto with British Airways Flights - offers best deals on Delhi to Toronto flight booking. Lowest airfare @<strong>Rs 38208.</strong>",
+      "price": "\u2014",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "New Delhi to Toronto British Airways Flights, Airfare, Flight Status & Time Schedule",
+      "url": "https://www.yatra.com/international-flights/british-airways-booking-new-delhi-to-toronto-flights.html",
+      "description": "The economy ticket for a SpiceJet flight from New Delhi to Toronto costs between <strong>Rs. 50000 to Rs. 60000</strong>. \u25cf Are there any stopover cities from New Delhi to Toronto? London, Dubai, Mumbai, Riyadh, Jeddah, Frankfurt, Amsterdam, Newark, ",
+      "price": "\u2014",
+      "airline": "British Airways",
+      "route": "Via Dubai",
+      "date": ""
+    },
+    {
+      "title": "Compare and book flights | Find cheap flights - British Airways",
+      "url": "https://www.britishairways.com/content/flights",
+      "description": "Search British Airways for flights to 170 destinations worldwide. Compare and browse flight deals with a generous baggage allowance, award winning service and more.",
+      "price": "\u2014",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "KLM Royal Dutch Airlines - Book flights online - KLM US",
+      "url": "https://www.klm.com/",
+      "description": "Compare and book all KLM flights, view great last minute offers, choose your favourite seat, check in online, book hotels and all you need for your trip.",
+      "price": "\u2014",
+      "airline": "KLM",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto KLM Royal Dutch Flights, Fare, Status & Time Schedule | MakeMyTrip INTL Flight",
+      "url": "https://www.makemytrip.com/international-flights/delhi-toronto-klm_airlines-tickets.html",
+      "description": "Book Cheap Delhi to Toronto with KLM Royal Dutch Flights - offers best deals on Delhi to Toronto flight booking. Lowest airfare @<strong>Rs 42112.</strong>",
+      "price": "\u2014",
+      "airline": "KLM",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Klm Royal Dutch Airlines Flights, Airfare, Flight Status & Time Schedule",
+      "url": "https://www.yatra.com/international-flights/klm-royal-dutch-airlines-booking-delhi-to-toronto-flights.html",
+      "description": "Book Klm Royal Dutch Airlines flight tickets from Delhi to Toronto and get unbelievable discounts on Yatra.com. Check Delhi to Toronto Klm Royal Dutch Airlines flights, flight status &amp; flight schedule at Yatra.com. Lowest fare Guaranteed on Klm R",
+      "price": "\u2014",
+      "airline": "KLM",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Cheap flights Delhi to Toronto | Air France flights DEL to YTO",
+      "url": "https://wwws.airfrance.in/en-in/flights-from-delhi-to-toronto",
+      "description": "Find your cheap round-trip flight Delhi Toronto with Air France at <strong>INR85.768</strong>. Discover our selection of cheapest return flights to Toronto from Delhi.",
+      "price": "inr85",
+      "airline": "Air France",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Cheap Air France Delhi to Toronto Flight Tickets - Via.com",
+      "url": "https://in.via.com/flight-tickets/air-france-flights-from-delhi-to-toronto",
+      "description": "Book Cheap Air France flights from Delhi to Toronto. Use Code VIAINTL &amp; get up to Rs.7000 Off on Air France Delhi Toronto flights. Check Delhi to Toronto Air France flight schedule, offers &amp; status on Via.com",
+      "price": "\u2014",
+      "airline": "Air France",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Delhi to Toronto Air France Flight, Cheap Air France Flight Ticket @ Goibibo",
+      "url": "https://www.goibibo.com/international-flights/delhi-to-toronto-air-france-airline-schedule/",
+      "description": "Compare and book Delhi to Toronto Air France flight at lowest airfare from Goibibo. Find the best flight offers and discounts for your Delhi to Toronto Air France flight tickets. Use coupon code FLYDREAM upto <strong>\u20b925000</strong> off.",
+      "price": "\u20b925000",
+      "airline": "Air France",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$408 Flights from Toronto (YTOA) to New Delhi (DEL) | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/ytoa/del/toronto-to-delhi-indira-gandhi-international.html",
+      "description": "Compare routes from Toronto to New Delhi below. You may find an airport to fly into that&#x27;s cheaper, faster, or easier than <strong>Delhi Indira Gandhi International</strong>. ... The things to know before you go.",
+      "price": "$408",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$426 Flights from Toronto (YYZ) to New Delhi (DEL) | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/yyz/del/toronto-pearson-international-to-delhi-indira-gandhi-international.html",
+      "description": "You may find an airport to fly into that&#x27;s cheaper, faster, or easier than Delhi Indira Gandhi International. ... The best price we found for a <strong>round-trip flight from Toronto Pearson International to Delhi Indira Gandhi International is ",
+      "price": "$426",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$437 Flights from Toronto (YTOA) to New Delhi (DEL)",
+      "url": "https://www.skyscanner.com/routes/ytoa/del/toronto-to-indira-gandhi-international.html",
+      "description": "You need to enable JavaScript to run this app",
+      "price": "$437",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Cheap Flights from Toronto to New Delhi from $912 | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/ytoa/del/toronto-to-new-delhi.html",
+      "description": "Find the cheapest month or even day to fly from Toronto to New Delhi. Or set up Price Alerts to book when the price is right \u00b7 Feeling spontaneous? It\u2019s never too late to book a trip. Here\u2019s our pick of the best last minute flights.",
+      "price": "$912",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Cheap Flights from New Delhi to Toronto from $978 | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/del/ytoa/new-delhi-to-toronto.html",
+      "description": "Check our live COVID-19 map for Canada travel restrictions and sign up for updates. There are 4 airports in Toronto: Toronto Pearson International, Kitchener / Waterloo, Toronto Island, and Hamilton. The best price found on Skyscanner for a flight fr",
+      "price": "$978",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$433 CHEAP FLIGHTS from New Delhi to Toronto Pearson (DEL - YYZ) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ",
+      "description": "Find flights to Toronto Pearson Airport <strong>from $433.</strong> Fly from New Delhi on SWISS, Cathay Pacific, British Airways and more. Search for Toronto Pearson Airport flights on KAYAK now to find the best deal.",
+      "price": "$433",
+      "airline": "British Airways",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$431 CHEAP FLIGHTS from New Delhi to Toronto (DEL - YTO) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-YTO",
+      "description": "Find flights to Toronto <strong>from $431.</strong> Fly from New Delhi on Cathay Pacific, SWISS, Korean Air and more. Search for Toronto flights on KAYAK now to find the best deal.",
+      "price": "$431",
+      "airline": "Swiss",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Cheap Flights from Toronto Pearson to New Delhi | KAYAK | (YYZ - DEL)",
+      "url": "https://www.kayak.com/flight-routes/Toronto-Pearson-Intl-YYZ/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "This is the cheapest one-way flight price found by a KAYAK user in the last 72 hours by searching for a flight from Pearson Intl to New Delhi departing on 1/16. Fares are subject to change and may not be available on all flights or dates of travel. C",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$612 CHEAP FLIGHTS from Toronto to New Delhi (YTO - DEL) | KAYAK",
+      "url": "https://www.kayak.com/flight-routes/Toronto-YTO/New-Delhi-Indira-Gandhi-Intl-DEL",
+      "description": "<strong>Use the UP Express train for quick access to YYZ</strong>. ... Our data shows that travelers who book at least 11 weeks in advance save around 16% compared to booking last minute. ... KAYAK searches 100s of sites at once to find you the best ",
+      "price": "$612",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "C$ 618 Cheap Air India Flights from New Delhi to Toronto Pearson Intl Airport | KAYAK",
+      "url": "https://www.ca.kayak.com/flight-routes/Air-India-New-Delhi-Indira-Gandhi-Intl-DEL/Toronto-Pearson-Intl-YYZ.b.AI.ksp",
+      "description": "The cheapest month for Air India ... try to avoid the most expensive months of April and March, when tickets cost <strong>C$ 1,575 and C$ 1,658</strong> respectively....",
+      "price": "\u2014",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$522 Cheap Flights from New Delhi to Toronto in 2026 | momondo",
+      "url": "https://www.momondo.com/flights/new-delhi/toronto",
+      "description": "You could potentially save up to ... 2026, prices for New Delhi to Toronto flights are <strong>approximately 10% cheaper when compared to flights at the same time last year</strong>....",
+      "price": "$522",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$589 Cheap Flights from Toronto to New Delhi in 2025/26 | momondo",
+      "url": "https://www.momondo.com/flights/toronto/new-delhi",
+      "description": "Search and compare airfare from 1000+ airlines and travel sites to get the cheapest flights from Toronto to New Delhi with momondo.",
+      "price": "$589",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "$286 Cheap Flights to New Delhi in 2026 | momondo",
+      "url": "https://www.momondo.com/flights/new-delhi",
+      "description": "Find Flights to New Delhi DEL <strong>from $286.</strong> Fly from the United States on Air India, Turkish Airlines, and more. New York from $656; Chicago from $687 | momondo",
+      "price": "$286",
+      "airline": "Air India",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Business Class Flights to New Delhi | momondo",
+      "url": "https://www.momondo.com/flights/Business-Class-United-States-US0/New-Delhi-Indira-Gandhi-Intl-DEL.bc.ksp",
+      "description": "Search and compare the best deals on Business Class flights to New Delhi on 1000+ airlines and travel sites. Book your New Delhi Business Class ticket.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google Flights",
+      "url": "https://www.google.com/travel/flights?gl=US&hl=en-US",
+      "description": "Explore cheap flights from United States to anywhere with Google Flights. Find your next flight, track price changes to get the best deals, and book your ticket.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Find Cheap Flights from Toronto - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto.html?gl=US&hl=en-US",
+      "description": "Use Google Flights to find cheap flights from Toronto and plan your next trip to your favorite destinations around the world.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "New Features, Same Low Prices: How to Use Google Flights to Find Cheap Flights",
+      "url": "https://thriftytraveler.com/guides/google-flights/",
+      "description": "Google Flights is the best online flight booking search service for finding cheap flights. Here&#x27;s how to use Google Flights to find cheap flights in seconds.",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Find Cheap Flights from New Delhi to Z\u00fcrich (DEL - ZRH) - Google Flights",
+      "url": "https://www.google.com/travel/flights/flights-from-new-delhi-to-zurich.html",
+      "description": "Typical prices for the least expensive round-trip flights from New Delhi to Z\u00fcrich per month. Insights are based on fares observed in the last 12 months. Current prices may differ. The cheapest month to fly from New Delhi to Z\u00fcrich is typically Octob",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    },
+    {
+      "title": "Find plane tickets on Google Flights - Computer - Travel Help",
+      "url": "https://support.google.com/travel/answer/2475306?hl=en&co=GENIE.Platform%3DDesktop",
+      "description": "When you use Google Flights to find plane tickets, you can get the best fares for where and when you want to travel. Use Google flights to: Find and book round trip, one-way, and multi-city ticket",
+      "price": "\u2014",
+      "airline": "\u2014",
+      "route": "\u2014",
+      "date": ""
+    }
+  ]
+}
