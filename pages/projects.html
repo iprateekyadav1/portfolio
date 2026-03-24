@@ -57,6 +57,93 @@
       </div>
     </section>
 
+    <!-- ─── Project Deep-Dive: Visualizations ─────── -->
+    <section class="kc-section" style="padding-top:0">
+      <div class="kc-wrap">
+        <h2 class="kc-section__title kc-fade">Data Visualizations</h2>
+        <p class="kc-section__sub kc-fade">
+          Key charts from the DataCamp Professional Data Scientist Exam —
+          <em>Recipe Site Traffic Analysis</em> &mdash; built with Matplotlib &amp; Seaborn.
+          Click any chart to view full-size.
+        </p>
+
+        <div class="kc-viz-grid kc-fade">
+
+          <!-- Calories Distribution -->
+          <div class="kc-viz-card"
+               data-img="../assets/viz/viz-01-p4.png"
+               data-caption="Distribution of Calories Across Recipes"
+               tabindex="0" role="button" aria-label="View calories distribution chart">
+            <div class="kc-viz-card__img-wrap">
+              <img src="../assets/viz/viz-01-p4.png"
+                   alt="Distribution of Calories Across Recipes — histogram"
+                   loading="lazy">
+            </div>
+            <div class="kc-viz-card__body">
+              <div class="kc-viz-card__title">Distribution of Calories Across Recipes</div>
+              <div class="kc-viz-card__desc">Right-skewed histogram showing most recipes cluster under 500 kcal, with notable outliers above 2,000.</div>
+            </div>
+          </div>
+
+          <!-- High Traffic by Category -->
+          <div class="kc-viz-card"
+               data-img="../assets/viz/viz-03-p6.png"
+               data-caption="High Traffic Distribution by Recipe Category"
+               tabindex="0" role="button" aria-label="View high traffic by category chart">
+            <div class="kc-viz-card__img-wrap">
+              <img src="../assets/viz/viz-03-p6.png"
+                   alt="High Traffic Distribution by Recipe Category — stacked bar"
+                   loading="lazy">
+            </div>
+            <div class="kc-viz-card__body">
+              <div class="kc-viz-card__title">High Traffic Distribution by Category</div>
+              <div class="kc-viz-card__desc">Beverages &amp; Breakfast dominate high-traffic outcomes; Pork &amp; Potato recipes skew low-traffic.</div>
+            </div>
+          </div>
+
+          <!-- Correlation Heatmap -->
+          <div class="kc-viz-card"
+               data-img="../assets/viz/viz-07-p11.png"
+               data-caption="Correlation Matrix — Nutritional Features vs Traffic"
+               tabindex="0" role="button" aria-label="View correlation heatmap">
+            <div class="kc-viz-card__img-wrap">
+              <img src="../assets/viz/viz-07-p11.png"
+                   alt="Correlation Matrix of Nutritional Features and Traffic — seaborn heatmap"
+                   loading="lazy">
+            </div>
+            <div class="kc-viz-card__body">
+              <div class="kc-viz-card__title">Correlation Matrix — Nutritional Features</div>
+              <div class="kc-viz-card__desc">Seaborn heatmap confirms near-zero correlation between nutritional values and traffic — category is the dominant signal.</div>
+            </div>
+          </div>
+
+          <!-- Model Performance -->
+          <div class="kc-viz-card"
+               data-img="../assets/viz/viz-08-p16.png"
+               data-caption="Model Performance Comparison — Logistic Regression vs Random Forest"
+               tabindex="0" role="button" aria-label="View model performance comparison chart">
+            <div class="kc-viz-card__img-wrap">
+              <img src="../assets/viz/viz-08-p16.png"
+                   alt="Model Performance Comparison — Logistic Regression vs Random Forest grouped bar chart"
+                   loading="lazy">
+            </div>
+            <div class="kc-viz-card__body">
+              <div class="kc-viz-card__title">Model Performance Comparison</div>
+              <div class="kc-viz-card__desc">Logistic Regression achieves 96% Recall vs Random Forest's 81%, making it the superior model for the business goal of minimising missed high-traffic recipes.</div>
+            </div>
+          </div>
+
+        </div><!-- /.kc-viz-grid -->
+      </div>
+    </section>
+
+    <!-- Lightbox (shared) -->
+    <div class="kc-lightbox" id="kc-lightbox" role="dialog" aria-modal="true" aria-label="Chart preview">
+      <button class="kc-lightbox__close" id="kc-lightbox-close" aria-label="Close">&#x2715;</button>
+      <img class="kc-lightbox__img" id="kc-lightbox-img" src="" alt="">
+      <div class="kc-lightbox__caption" id="kc-lightbox-caption"></div>
+    </div>
+
     <!-- GitHub Section -->
     <section class="kc-section">
       <div class="kc-wrap">
@@ -110,5 +197,42 @@
   </footer>
 
   <script src="../js/script.js"></script>
+  <script>
+  (function () {
+    'use strict';
+    var lb     = document.getElementById('kc-lightbox');
+    var lbImg  = document.getElementById('kc-lightbox-img');
+    var lbCap  = document.getElementById('kc-lightbox-caption');
+    var lbClose= document.getElementById('kc-lightbox-close');
+
+    function openLightbox(imgSrc, caption) {
+      lbImg.src = imgSrc;
+      lbImg.alt = caption || '';
+      lbCap.textContent = caption || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function closeLightbox() {
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.kc-viz-card').forEach(function (card) {
+      function activate() { openLightbox(card.dataset.img, card.dataset.caption); }
+      card.addEventListener('click', activate);
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
+      });
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+    });
+  })();
+  </script>
 </body>
 </html>

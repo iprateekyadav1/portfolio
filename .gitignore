@@ -1,4 +1,6 @@
 .playwright-mcp/
-*.png
 .DS_Store
 .env
+# Allow portfolio asset PNGs (certs, viz); ignore all other PNGs at root level
+*.png
+!assets/**/*.png
