@@ -39,7 +39,7 @@ Personal portfolio showcasing machine learning models, deep learning systems, an
 
 ### Education
 
-**B.Tech Computer Science** — GLA University *(Aug 2022 – Present, CGPA 7.19)*
+**B.Tech Computer Science** — GLA University *(Aug 2022 – Present, 8th Semester, CGPA 7.19)*
 
 ---
 
