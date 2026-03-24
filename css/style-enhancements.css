@@ -117,6 +117,15 @@
 .kc-stat:hover::before {
   opacity: 1;
 }
+a.kc-stat {
+  color: inherit;
+  display: block;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+a.kc-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(99,102,241,0.18);
+}
 .kc-stat__value {
   letter-spacing: 0.03em;
 }

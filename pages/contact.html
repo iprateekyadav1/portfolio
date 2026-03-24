@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Vipin Yadav</title>
+  <title>Contact — Prateek Yadav</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <!-- Navigation -->
   <nav class="kc-nav" role="navigation">
     <div class="kc-nav__inner">
-      <a href="../index.html" class="kc-nav__brand">Vipin Yadav</a>
+      <a href="../index.html" class="kc-nav__brand">Prateek Yadav</a>
       <ul class="kc-nav__links">
         <li><a href="../index.html" class="kc-nav__link">Home</a></li>
         <li><a href="projects.html" class="kc-nav__link">Projects</a></li>
@@ -35,21 +35,73 @@
     <section class="kc-section" style="padding-top:120px">
       <div class="kc-wrap">
         <h1 class="kc-section__title kc-fade">Get in Touch</h1>
-        <p class="kc-section__sub kc-fade">Have a project in mind or want to discuss QA automation and AI integration? I'd love to hear from you.</p>
+        <p class="kc-section__sub kc-fade">Interested in data science collaborations, ML projects, or just want to connect? I'd love to hear from you.</p>
 
         <div class="kc-contact-grid">
 
           <!-- Form -->
-          <form class="kc-form kc-fade" action="https://formspree.io/f/placeholder" method="POST">
-            <input type="text" name="name" class="kc-input" placeholder="Your Name" required>
-            <input type="email" name="email" class="kc-input" placeholder="Your Email" required>
-            <input type="text" name="subject" class="kc-input" placeholder="Subject">
-            <textarea name="message" class="kc-textarea" placeholder="Your Message" required></textarea>
+          <form class="kc-form kc-fade" id="contact-form" action="#" method="POST" novalidate>
+            <input type="text" name="name" id="cf-name" class="kc-input" placeholder="Your Name" required>
+            <input type="email" name="email" id="cf-email" class="kc-input" placeholder="Your Email" required>
+            <input type="text" name="subject" id="cf-subject" class="kc-input" placeholder="Subject">
+            <textarea name="message" id="cf-message" class="kc-textarea" placeholder="Your Message" required></textarea>
             <button type="submit" class="kc-btn kc-btn--primary" style="align-self:flex-start">
               Send Message
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
+            <!-- Success / error messages -->
+            <div id="cf-success" style="display:none;margin-top:12px;padding:14px 18px;border-radius:10px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.4);color:#10B981;font-weight:500;font-size:0.9rem;">
+              ✓ Your email client has opened with the message pre-filled. Hit Send to deliver it!
+            </div>
+            <div id="cf-error" style="display:none;margin-top:12px;padding:14px 18px;border-radius:10px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.35);color:#ef4444;font-weight:500;font-size:0.9rem;">
+              ✕ Please fill in your name, email and message before sending.
+            </div>
           </form>
+
+          <script>
+          (function () {
+            var form    = document.getElementById('contact-form');
+            var success = document.getElementById('cf-success');
+            var error   = document.getElementById('cf-error');
+
+            form.addEventListener('submit', function (e) {
+              e.preventDefault();
+
+              var name    = document.getElementById('cf-name').value.trim();
+              var email   = document.getElementById('cf-email').value.trim();
+              var subject = document.getElementById('cf-subject').value.trim();
+              var message = document.getElementById('cf-message').value.trim();
+
+              // Hide previous messages
+              success.style.display = 'none';
+              error.style.display   = 'none';
+
+              // Basic validation
+              if (!name || !email || !message) {
+                error.style.display = 'block';
+                return;
+              }
+
+              var to      = 'yadav.prateek2021@gmail.com';
+              var sub     = subject
+                ? encodeURIComponent('[Portfolio] ' + subject)
+                : encodeURIComponent('[Portfolio] Message from ' + name);
+              var body    = encodeURIComponent(
+                'Hi Prateek,\n\nName: ' + name +
+                '\nEmail: ' + email +
+                '\n\n' + message + '\n\n— Sent via portfolio contact form'
+              );
+
+              window.location.href = 'mailto:' + to + '?subject=' + sub + '&body=' + body;
+
+              // Show confirmation and reset form after short delay
+              setTimeout(function () {
+                success.style.display = 'block';
+                form.reset();
+              }, 400);
+            });
+          })();
+          </script>
 
           <!-- Contact Info -->
           <div class="kc-contact-info kc-fade">
@@ -59,7 +111,7 @@
               </div>
               <div>
                 <div style="font-weight:600;color:var(--kc-text);margin-bottom:2px">Email</div>
-                <a href="mailto:ydvvipin1793@gmail.com">ydvvipin1793@gmail.com</a>
+                <a href="mailto:yadav.prateek2021@gmail.com">yadav.prateek2021@gmail.com</a>
               </div>
             </div>
 
@@ -69,7 +121,7 @@
               </div>
               <div>
                 <div style="font-weight:600;color:var(--kc-text);margin-bottom:2px">Phone</div>
-                <a href="tel:+16476769897">(647) 676-9897</a>
+                <a href="tel:+919368391328">+91 9368391328</a>
               </div>
             </div>
 
@@ -79,7 +131,7 @@
               </div>
               <div>
                 <div style="font-weight:600;color:var(--kc-text);margin-bottom:2px">Location</div>
-                <span>Toronto, Ontario, Canada</span>
+                <span>Vrindavan, Uttar Pradesh, India</span>
               </div>
             </div>
 
@@ -89,7 +141,7 @@
               </div>
               <div>
                 <div style="font-weight:600;color:var(--kc-text);margin-bottom:2px">LinkedIn</div>
-                <a href="https://www.linkedin.com/in/vipin-ydv/" target="_blank">linkedin.com/in/vipin-ydv</a>
+                <a href="https://linkedin.com/in/prateek-singh-yadav-551478204" target="_blank">linkedin.com/in/prateek-singh-yadav-551478204</a>
               </div>
             </div>
 
@@ -99,7 +151,7 @@
               </div>
               <div>
                 <div style="font-weight:600;color:var(--kc-text);margin-bottom:2px">GitHub</div>
-                <a href="https://github.com/YdvVipin" target="_blank">github.com/YdvVipin</a>
+                <a href="https://github.com/iprateekyadav1" target="_blank">github.com/iprateekyadav1</a>
               </div>
             </div>
           </div>
@@ -114,16 +166,16 @@
   <footer class="kc-footer">
     <div class="kc-footer__inner">
       <div>
-        <div class="kc-footer__brand">Vipin Yadav</div>
-        <p class="kc-footer__desc">QA Automation Specialist & AI Engineer based in Toronto, Ontario.</p>
+        <div class="kc-footer__brand">Prateek Yadav</div>
+        <p class="kc-footer__desc">Data Scientist &amp; ML Engineer based in Vrindavan, Uttar Pradesh.</p>
         <div class="kc-footer__socials">
-          <a href="https://www.linkedin.com/in/vipin-ydv/" target="_blank" class="kc-footer__social" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/prateek-singh-yadav-551478204" target="_blank" class="kc-footer__social" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-          <a href="https://github.com/YdvVipin" target="_blank" class="kc-footer__social" aria-label="GitHub">
+          <a href="https://github.com/iprateekyadav1" target="_blank" class="kc-footer__social" aria-label="GitHub">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
           </a>
-          <a href="mailto:ydvvipin1793@gmail.com" class="kc-footer__social" aria-label="Email">
+          <a href="mailto:yadav.prateek2021@gmail.com" class="kc-footer__social" aria-label="Email">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
         </div>
@@ -139,13 +191,13 @@
       <div>
         <h4 class="kc-footer__heading">Connect</h4>
         <ul class="kc-footer__links">
-          <li><a href="https://www.linkedin.com/in/vipin-ydv/" target="_blank" class="kc-footer__link">LinkedIn</a></li>
-          <li><a href="https://github.com/YdvVipin" target="_blank" class="kc-footer__link">GitHub</a></li>
-          <li><a href="mailto:ydvvipin1793@gmail.com" class="kc-footer__link">Email</a></li>
+          <li><a href="https://linkedin.com/in/prateek-singh-yadav-551478204" target="_blank" class="kc-footer__link">LinkedIn</a></li>
+          <li><a href="https://github.com/iprateekyadav1" target="_blank" class="kc-footer__link">GitHub</a></li>
+          <li><a href="mailto:yadav.prateek2021@gmail.com" class="kc-footer__link">Email</a></li>
         </ul>
       </div>
     </div>
-    <div class="kc-footer__bottom">Vipin Yadav &copy; 2025. Built with precision.</div>
+    <div class="kc-footer__bottom">Prateek Yadav &copy; 2026. Built with data.</div>
   </footer>
 
   <script src="../js/script.js"></script>

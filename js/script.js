@@ -2,7 +2,7 @@
    Kinetic Cards — Portfolio Interactions
    ═══════════════════════════════════════════════════ */
 
-const GITHUB_USERNAME = 'YdvVipin';
+const GITHUB_USERNAME = 'iprateekyadav1';
 const GITHUB_API = 'https://api.github.com';
 
 // ─── Base path for multi-page navigation ──────────
@@ -10,17 +10,30 @@ const BASE = document.body.dataset.basePath || '';
 
 // ─── Local Project Detail Pages ───────────────────
 const LOCAL_PROJECTS = [
-  { name: 'QA Automation AI Enabler', path: 'projects/ai-enabled-qa/', desc: '50K+ LOC platform with 72 FastAPI endpoints, 18 AI agents, React dashboard', tags: ['Python', 'React', 'FastAPI'], category: 'ai-platforms' },
-  { name: 'Playwright BDD Framework', path: 'projects/playwright-bdd-framework/', desc: 'TypeScript BDD framework with 3 AI agents and 9-tier intelligent locator system', tags: ['TypeScript', 'Playwright'], category: 'qa-frameworks' },
-  { name: 'Multi-Agent Orchestration', path: 'projects/multi-agent-orchestration/', desc: '5 specialized agents with 5 MCP servers using CrewAI and LangChain', tags: ['Python', 'CrewAI'], category: 'ai-platforms' },
-  { name: 'QA RAG System', path: 'projects/rag-system/', desc: '25+ data collectors with FAISS vector search for intelligent QA knowledge retrieval', tags: ['Python', 'FAISS'], category: 'ai-ml' },
-  { name: 'GenAI QA Automation', path: 'projects/genai-qa-automation/', desc: 'Generative AI powered test case generation and execution pipeline', tags: ['Python', 'AI/ML'], category: 'ai-ml' },
-  { name: 'AI-Enabled API Automation', path: 'projects/ai-enabled-api-automation/', desc: 'BDD framework with AI-driven API testing, Allure reports, and schema validation', tags: ['Python', 'BDD'], category: 'qa-frameworks' },
-  { name: 'AI Gig Discovery', path: 'projects/gig-flow/', desc: 'AI-powered freelance gig discovery automation using Claude API', tags: ['Python', 'Claude API'], category: 'ai-ml' },
-  { name: 'JIRA Data Analysis', path: 'projects/jira-data-analysis/', desc: 'Prophet forecasting and NLP analysis on Jira project data', tags: ['Python', 'NLP'], category: 'data-intelligence' },
-  { name: 'Jira-TestRail Integration', path: 'projects/JiraTestRailIntegration/', desc: 'Jira to TestRail sync with Grok AI achieving 98% accuracy', tags: ['Python', 'Grok AI'], category: 'data-intelligence' },
-  { name: 'E-Commerce Testing', path: 'projects/qa-automation-1/', desc: 'End-to-end e-commerce test automation suite', tags: ['Selenium', 'Java'], category: 'qa-frameworks' },
-  { name: 'API Testing Suite', path: 'projects/qa-automation-2/', desc: 'Comprehensive API testing framework with data-driven approach', tags: ['REST', 'Python'], category: 'qa-frameworks' },
+  {
+    name: 'House Sales Pricing Model',
+    path: 'projects/house-pricing/',
+    url: 'https://www.datacamp.com/datalab/w/8e768225-61db-42a7-9646-eeb9be9424bf/edit',
+    desc: 'Supervised ML solution predicting house sale prices using Random Forest and Linear Regression on property characteristics',
+    tags: ['Python', 'Scikit-Learn', 'Pandas'],
+    category: 'ml-models'
+  },
+  {
+    name: 'Recipe Traffic Prediction',
+    path: 'projects/recipe-traffic/',
+    url: 'https://www.datacamp.com/datalab/w/d4f31130-b2c2-45ce-a8af-6e5c2d47e3db/edit',
+    desc: 'ML classification system predicting high-traffic recipes for Tasty Bytes platform with 80%+ accuracy',
+    tags: ['Python', 'Scikit-Learn', 'Matplotlib'],
+    category: 'ml-models'
+  },
+  {
+    name: 'Neural Clothing Classifier',
+    path: 'projects/clothing-classifier/',
+    url: 'https://www.datacamp.com/datalab/w/884f10d5-8055-4abd-b409-d169c3465c3d/edit',
+    desc: 'Multiclass neural network classifying FashionMNIST clothing images into 10 categories with ~88% test accuracy',
+    tags: ['PyTorch', 'Python'],
+    category: 'deep-learning'
+  },
 ];
 
 const LANG_COLORS = {
@@ -52,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ─── Theme Toggle (Light/Dark) ───────────────────
 function initThemeToggle() {
   const root = document.documentElement;
-  const toggleKey = 'vipin-theme';
+  const toggleKey = 'prateek-theme';
   const stored = window.localStorage.getItem(toggleKey);
 
   if (stored === 'dark') {
@@ -372,7 +385,8 @@ function renderLocalProjects() {
 
   LOCAL_PROJECTS.forEach((project) => {
     const card = document.createElement('a');
-    card.href = BASE + project.path;
+    card.href = project.url || (BASE + project.path);
+    if (project.url) { card.target = '_blank'; card.rel = 'noopener noreferrer'; }
     card.className = 'kc-card kc-fade';
     card.dataset.category = project.category;
 

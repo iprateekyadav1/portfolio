@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prateek Yadav — Portfolio Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --green:   #6B8E23;
+      --green2:  #8ab52e;
+      --dark:    #0f1117;
+      --card:    #1a1d27;
+      --card2:   #222536;
+      --border:  #2e3347;
+      --text:    #e2e8f0;
+      --text2:   #94a3b8;
+      --text3:   #64748b;
+      --accent:  #a3c639;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Top Nav ── */
+    .dash-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px; height: 60px;
+      background: var(--card); border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .dash-nav__brand { font-size: 1.1rem; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
+    .dash-nav__title { font-size: 0.85rem; color: var(--text2); }
+    .dash-nav__badge {
+      font-size: 0.75rem; background: rgba(107,142,35,0.2);
+      color: var(--accent); border: 1px solid rgba(107,142,35,0.4);
+      padding: 3px 10px; border-radius: 20px; font-weight: 600;
+    }
+
+    /* ── Layout ── */
+    .dash-wrap { max-width: 1400px; margin: 0 auto; padding: 28px 28px 60px; }
+
+    /* ── Profile Header ── */
+    .profile-header {
+      display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center;
+      background: linear-gradient(135deg, var(--card) 0%, #1d2235 100%);
+      border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px;
+      margin-bottom: 24px; position: relative; overflow: hidden;
+    }
+    .profile-header::before {
+      content: ''; position: absolute; right: -60px; top: -60px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(107,142,35,0.15) 0%, transparent 70%);
+    }
+    .profile-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--green2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; font-weight: 800; color: #fff; flex-shrink: 0;
+    }
+    .profile-info h1 { font-size: 1.6rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .profile-info .headline { font-size: 0.95rem; color: var(--accent); font-weight: 600; margin-bottom: 10px; }
+    .profile-contacts { display: flex; gap: 20px; flex-wrap: wrap; }
+    .profile-contact { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text2); }
+    .profile-contact a { color: var(--text2); text-decoration: none; }
+    .profile-contact a:hover { color: var(--accent); }
+    .profile-gpa {
+      text-align: right;
+    }
+    .profile-gpa .big { font-size: 2.4rem; font-weight: 800; color: var(--accent); line-height: 1; }
+    .profile-gpa .label { font-size: 0.75rem; color: var(--text3); margin-top: 4px; }
+
+    /* ── Stats Row ── */
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+    .stat-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 24px; position: relative; overflow: hidden;
+    }
+    .stat-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--green), var(--green2));
+      border-radius: 0 0 12px 12px;
+    }
+    .stat-card__val { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1.1; }
+    .stat-card__label { font-size: 0.8rem; color: var(--text2); margin-top: 6px; font-weight: 500; }
+    .stat-card__icon { position: absolute; right: 20px; top: 18px; font-size: 1.6rem; opacity: 0.15; }
+
+    /* ── Grid 2 cols ── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .span-2 { grid-column: span 2; }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 24px; overflow: hidden;
+    }
+    .card__title {
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text3); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .card__title::before {
+      content: ''; display: block; width: 3px; height: 14px;
+      background: var(--green); border-radius: 2px;
+    }
+
+    /* ── Skills bar chart ── */
+    .chart-wrap { position: relative; }
+
+    /* ── Skill pills ── */
+    .skill-group { margin-bottom: 16px; }
+    .skill-group__label {
+      font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      color: var(--text3); letter-spacing: 0.06em; margin-bottom: 8px;
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill {
+      font-size: 0.78rem; padding: 4px 12px; border-radius: 20px;
+      background: rgba(107,142,35,0.12); border: 1px solid rgba(107,142,35,0.3);
+      color: var(--accent); font-weight: 500;
+    }
+    .pill.pill--dim {
+      background: rgba(255,255,255,0.04); border-color: var(--border);
+      color: var(--text2);
+    }
+
+    /* ── Project Cards ── */
+    .project-card {
+      background: var(--card2); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px; transition: border-color 0.2s, transform 0.2s;
+    }
+    .project-card:hover { border-color: rgba(107,142,35,0.5); transform: translateY(-2px); }
+    .project-card__num {
+      font-size: 2rem; font-weight: 900; color: rgba(107,142,35,0.15);
+      line-height: 1; margin-bottom: 8px;
+    }
+    .project-card__title { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .project-card__desc { font-size: 0.82rem; color: var(--text2); line-height: 1.6; margin-bottom: 14px; }
+    .project-card__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 12px; }
+    .project-card__tag {
+      font-size: 0.72rem; padding: 2px 8px; border-radius: 4px;
+      background: rgba(107,142,35,0.1); color: var(--accent);
+      border: 1px solid rgba(107,142,35,0.2);
+    }
+    .project-card__metric {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.78rem; color: var(--green2); font-weight: 600;
+    }
+    .project-card__metric::before { content: '▲'; font-size: 0.65rem; }
+
+    /* ── Cert list ── */
+    .cert-item {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      padding: 12px 0; border-bottom: 1px solid var(--border);
+    }
+    .cert-item:last-child { border-bottom: none; }
+    .cert-item__name { font-size: 0.88rem; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+    .cert-item__issuer { font-size: 0.78rem; color: var(--text2); }
+    .cert-item__id { font-size: 0.7rem; color: var(--text3); font-family: monospace; margin-top: 2px; }
+    .cert-item__date {
+      font-size: 0.75rem; color: var(--accent); font-weight: 600;
+      white-space: nowrap; padding-left: 12px;
+    }
+
+    /* ── Education ── */
+    .edu-item { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .edu-item:last-child { border-bottom: none; }
+    .edu-item__dot {
+      width: 12px; height: 12px; border-radius: 50%; background: var(--green);
+      flex-shrink: 0; margin-top: 4px;
+      box-shadow: 0 0 0 3px rgba(107,142,35,0.2);
+    }
+    .edu-item__degree { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    .edu-item__school { font-size: 0.82rem; color: var(--text2); margin-bottom: 3px; }
+    .edu-item__meta { font-size: 0.78rem; color: var(--text3); }
+    .edu-item__gpa { font-size: 0.82rem; color: var(--accent); font-weight: 600; }
+
+    /* ── Internship ── */
+    .intern-card {
+      background: rgba(107,142,35,0.06); border: 1px solid rgba(107,142,35,0.25);
+      border-radius: 12px; padding: 20px;
+    }
+    .intern-card__company { font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+    .intern-card__role { font-size: 0.85rem; color: var(--text2); margin-bottom: 4px; }
+    .intern-card__date { font-size: 0.78rem; color: var(--text3); margin-bottom: 14px; }
+    .intern-card__bullets { padding-left: 16px; }
+    .intern-card__bullets li { font-size: 0.83rem; color: var(--text2); line-height: 1.7; }
+
+    /* ── Radar chart ── */
+    canvas { max-width: 100%; }
+
+    /* ── Footer bar ── */
+    .dash-footer {
+      text-align: center; font-size: 0.78rem; color: var(--text3);
+      padding: 24px 0 0; border-top: 1px solid var(--border); margin-top: 8px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .span-2 { grid-column: span 1; }
+      .profile-header { grid-template-columns: auto 1fr; }
+      .profile-gpa { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="dash-nav">
+    <div class="dash-nav__brand">PY // Dashboard</div>
+    <div class="dash-nav__title">Prateek Yadav — Data Science Portfolio</div>
+    <div class="dash-nav__badge">Live</div>
+  </nav>
+
+  <div class="dash-wrap">
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-avatar">PY</div>
+      <div class="profile-info">
+        <h1>Prateek Yadav</h1>
+        <div class="headline">Data Scientist &amp; Machine Learning Engineer</div>
+        <div class="profile-contacts">
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:yadav.prateek2021@gmail.com">yadav.prateek2021@gmail.com</a>
+          </div>
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12 19.79 19.79 0 0 1 1.04 3.4 2 2 0 0 1 3 1.4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+            +91 9368391328
+          </div>
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Vrindavan, Uttar Pradesh
+          </div>
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href="https://linkedin.com/in/prateek-singh-yadav-551478204" target="_blank">LinkedIn</a>
+          </div>
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/iprateekyadav1" target="_blank">github.com/iprateekyadav1</a>
+          </div>
+          <div class="profile-contact">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            B.Tech CS — GLA University (Aug 2022 – Present)
+          </div>
+        </div>
+      </div>
+      <div class="profile-gpa">
+        <div class="big">71.9<span style="font-size:1rem">%</span></div>
+        <div class="label">Current GPA</div>
+        <div style="margin-top:12px">
+          <div class="big" style="font-size:1.6rem">7<span style="font-size:0.9rem">th</span></div>
+          <div class="label">Semester</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-card__icon">🤖</div>
+        <div class="stat-card__val">3</div>
+        <div class="stat-card__label">ML Projects Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon">🏆</div>
+        <div class="stat-card__val">6</div>
+        <div class="stat-card__label">Industry Certifications</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon">🎯</div>
+        <div class="stat-card__val">88%</div>
+        <div class="stat-card__label">Neural Net Test Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__icon">📊</div>
+        <div class="stat-card__val">80%+</div>
+        <div class="stat-card__label">Classification Accuracy</div>
+      </div>
+    </div>
+
+    <!-- Row 1: Radar Chart + Skills Pills -->
+    <div class="grid-2" style="margin-bottom:20px">
+      <div class="card">
+        <div class="card__title">Skills Proficiency</div>
+        <div class="chart-wrap" style="height:260px">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__title">Tech Stack</div>
+        <div class="skill-group">
+          <div class="skill-group__label">Languages</div>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Excel</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__label">ML Libraries</div>
+          <div class="skill-pills">
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__label">Deep Learning</div>
+          <div class="skill-pills">
+            <span class="pill">PyTorch</span>
+            <span class="pill">CNN</span>
+            <span class="pill">RNN</span>
+            <span class="pill">LSTM</span>
+            <span class="pill">GRU</span>
+            <span class="pill">Transformers</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__label">Visualization &amp; NLP</div>
+          <div class="skill-pills">
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Seaborn</span>
+            <span class="pill">spaCy</span>
+            <span class="pill">Pydub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group__label">Concepts</div>
+          <div class="skill-pills">
+            <span class="pill pill--dim">Machine Learning</span>
+            <span class="pill pill--dim">Statistical Modeling</span>
+            <span class="pill pill--dim">EDA</span>
+            <span class="pill pill--dim">Feature Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Projects -->
+    <div class="card" style="margin-bottom:20px">
+      <div class="card__title">Projects</div>
+      <div class="grid-3" style="margin-bottom:0">
+
+        <a href="https://www.datacamp.com/datalab/w/8e768225-61db-42a7-9646-eeb9be9424bf/edit" target="_blank" rel="noopener noreferrer" class="project-card" style="text-decoration:none;display:block">
+          <div class="project-card__num">01</div>
+          <div class="project-card__title">RealAgents House Sales Pricing Model ↗</div>
+          <div class="project-card__desc">Supervised ML solution predicting house sale prices from property characteristics. Performed data cleaning, imputation, and EDA on price vs. bedrooms. Trained Linear Regression and Random Forest models to produce pricing recommendations for faster sales.</div>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Python</span>
+            <span class="project-card__tag">Pandas</span>
+            <span class="project-card__tag">Scikit-Learn</span>
+            <span class="project-card__tag">Random Forest</span>
+          </div>
+          <div class="project-card__metric">Pricing recommendations on validation data</div>
+        </a>
+
+        <a href="https://www.datacamp.com/datalab/w/d4f31130-b2c2-45ce-a8af-6e5c2d47e3db/edit" target="_blank" rel="noopener noreferrer" class="project-card" style="text-decoration:none;display:block">
+          <div class="project-card__num">02</div>
+          <div class="project-card__title">Recipe Site Traffic Prediction — Tasty Bytes ↗</div>
+          <div class="project-card__desc">ML classification system identifying high-traffic recipes for Tasty Bytes. Analyzed nutritional content (calories, protein, carbs), category, and serving size. Evaluated multiple classifiers enabling data-driven homepage content selection.</div>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Python</span>
+            <span class="project-card__tag">Scikit-Learn</span>
+            <span class="project-card__tag">NumPy</span>
+            <span class="project-card__tag">Matplotlib</span>
+            <span class="project-card__tag">Seaborn</span>
+          </div>
+          <div class="project-card__metric">80%+ Classification Accuracy</div>
+        </a>
+
+        <a href="https://www.datacamp.com/datalab/w/884f10d5-8055-4abd-b409-d169c3465c3d/edit" target="_blank" rel="noopener noreferrer" class="project-card" style="text-decoration:none;display:block">
+          <div class="project-card__num">03</div>
+          <div class="project-card__title">Neural Clothing Image Classifier ↗</div>
+          <div class="project-card__desc">Multiclass neural network classifying FashionMNIST clothing images into 10 categories. Trained fully connected classifier on 60K images with Adam optimization and cross-entropy loss. Evaluated with accuracy, precision, and recall via TorchMetrics.</div>
+          <div class="project-card__tags">
+            <span class="project-card__tag">PyTorch</span>
+            <span class="project-card__tag">Torchvision</span>
+            <span class="project-card__tag">TorchMetrics</span>
+            <span class="project-card__tag">FashionMNIST</span>
+          </div>
+          <div class="project-card__metric">~88% Test Accuracy on 60K images</div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Row 3: Skills Bar + Certifications -->
+    <div class="grid-2" style="margin-bottom:20px">
+
+      <div class="card">
+        <div class="card__title">Certifications</div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.datacamp.com/certificate/DS0021443906625" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">Data Scientist Professional ↗</div>
+            </a>
+            <div class="cert-item__issuer">DataCamp</div>
+            <div class="cert-item__id">ID: DS0021443906625</div>
+          </div>
+          <div class="cert-item__date">Nov 2025</div>
+        </div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.datacamp.com/certificate/DSA0011392168138" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">Data Scientist Associate ↗</div>
+            </a>
+            <div class="cert-item__issuer">DataCamp</div>
+            <div class="cert-item__id">ID: DSA0011392168138</div>
+          </div>
+          <div class="cert-item__date">Oct 2025</div>
+        </div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/86f4bd24b9db5a3fc4032813270e4c809485c16a" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">Deep Learning in Python ↗</div>
+            </a>
+            <div class="cert-item__issuer">DataCamp — CNN, RNN, Transformers, LSTM, GRU</div>
+          </div>
+          <div class="cert-item__date">Feb 2026</div>
+        </div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/da50649e2a9802d9611f1e1442551ab09e1078a3" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">NLP in Python ↗</div>
+            </a>
+            <div class="cert-item__issuer">DataCamp — Text Preprocessing, Sentiment Analysis</div>
+          </div>
+          <div class="cert-item__date">Dec 2025</div>
+        </div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/97d9d741dbcc90e495e725869f708985798f3974" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">Advanced NLP with spaCy ↗</div>
+            </a>
+            <div class="cert-item__issuer">DataCamp</div>
+          </div>
+          <div class="cert-item__date">Dec 2025</div>
+        </div>
+        <div class="cert-item">
+          <div>
+            <a href="https://www.linkedin.com/learning/certificates/967c543d764bcb981c4c630502f60507ad47be788c4c23e4faad917aa8b08b1f" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+              <div class="cert-item__name" style="color:var(--accent)">Prompt Engineering for Generative AI ↗</div>
+            </a>
+            <div class="cert-item__issuer">LinkedIn Learning</div>
+          </div>
+          <div class="cert-item__date">Dec 2025</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Accuracy Metrics</div>
+        <div class="chart-wrap" style="height:220px; margin-bottom:20px">
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="card__title" style="margin-top:4px">Internship</div>
+        <div class="intern-card">
+          <div class="intern-card__company">GLA University</div>
+          <div class="intern-card__role">AI &amp; Machine Learning Project Intern</div>
+          <div class="intern-card__date">June 2024 — July 2024 · Mathura, Uttar Pradesh</div>
+          <ul class="intern-card__bullets">
+            <li>Research &amp; data collection for ML model training</li>
+            <li>Feature design for IoT-based animal health monitor</li>
+            <li>Stack: Python, Pandas, Scikit-Learn</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 4: Education -->
+    <div class="card" style="margin-bottom:20px">
+      <div class="card__title">Education</div>
+      <div class="edu-item">
+        <div class="edu-item__dot"></div>
+        <div>
+          <div class="edu-item__degree">Bachelor of Technology — Computer Science</div>
+          <div class="edu-item__school">GLA University, Mathura, Uttar Pradesh</div>
+          <div class="edu-item__meta">Aug 2022 — Present &nbsp;·&nbsp; <span class="edu-item__gpa">GPA: 71.9% (Till 7th Sem)</span></div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-item__dot" style="background:var(--text3);box-shadow:none"></div>
+        <div>
+          <div class="edu-item__degree">Higher Secondary Certificate (PCM)</div>
+          <div class="edu-item__school">Rajiv International School, Mathura</div>
+          <div class="edu-item__meta">2021 — 2022 &nbsp;·&nbsp; <span class="edu-item__gpa">GPA: 72.4%</span></div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-item__dot" style="background:var(--text3);box-shadow:none"></div>
+        <div>
+          <div class="edu-item__degree">Secondary School Certificate</div>
+          <div class="edu-item__school">Rajiv International School, Mathura</div>
+          <div class="edu-item__meta">2019 — 2020 &nbsp;·&nbsp; <span class="edu-item__gpa">GPA: 93.8%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="dash-footer">
+      Prateek Yadav &copy; 2026 &nbsp;·&nbsp; Data Science Portfolio Dashboard &nbsp;·&nbsp;
+      <a href="index.html" style="color:var(--accent);text-decoration:none">Back to Portfolio →</a>
+    </div>
+
+  </div><!-- /wrap -->
+
+  <script>
+    // ── Radar Chart ──────────────────────────────────
+    const radarCtx = document.getElementById('radarChart').getContext('2d');
+    new Chart(radarCtx, {
+      type: 'radar',
+      data: {
+        labels: ['Python / SQL', 'Machine Learning', 'Deep Learning', 'Data Analysis', 'NLP', 'Visualization'],
+        datasets: [{
+          label: 'Proficiency',
+          data: [90, 85, 78, 88, 72, 82],
+          backgroundColor: 'rgba(107,142,35,0.18)',
+          borderColor: '#6B8E23',
+          borderWidth: 2,
+          pointBackgroundColor: '#a3c639',
+          pointBorderColor: '#6B8E23',
+          pointRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          r: {
+            min: 0, max: 100,
+            ticks: { display: false, stepSize: 20 },
+            grid: { color: 'rgba(255,255,255,0.07)' },
+            angleLines: { color: 'rgba(255,255,255,0.07)' },
+            pointLabels: {
+              color: '#94a3b8', font: { size: 11, weight: '600' }
+            }
+          }
+        }
+      }
+    });
+
+    // ── Bar Chart (accuracy metrics) ─────────────────
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    new Chart(barCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Neural Classifier', 'Recipe Predictor', 'House Pricing', 'SSC GPA'],
+        datasets: [{
+          label: 'Score (%)',
+          data: [88, 80, 75, 93.8],
+          backgroundColor: [
+            'rgba(107,142,35,0.75)',
+            'rgba(107,142,35,0.55)',
+            'rgba(107,142,35,0.4)',
+            'rgba(163,198,57,0.6)',
+          ],
+          borderColor: ['#6B8E23', '#6B8E23', '#6B8E23', '#a3c639'],
+          borderWidth: 1.5,
+          borderRadius: 6,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: '#64748b', font: { size: 11 } },
+            grid: { display: false }
+          },
+          y: {
+            min: 0, max: 100,
+            ticks: {
+              color: '#64748b', font: { size: 10 },
+              callback: v => v + '%'
+            },
+            grid: { color: 'rgba(255,255,255,0.05)' }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
