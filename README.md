@@ -1,33 +1,52 @@
-# Portfolio
+# Prateek Yadav — Portfolio
 
-## QA Automation Portfolio - Vipin Yadav
+## Data Scientist & ML Engineer
 
-A comprehensive portfolio showcasing QA automation projects, testing frameworks, and data analysis capabilities.
+Personal portfolio showcasing machine learning models, deep learning systems, and data-driven solutions built from real-world datasets.
+
+🌐 **Live Site:** [github.com/iprateekyadav1/portfolio](https://github.com/iprateekyadav1/portfolio)
+
+---
 
 ### Featured Projects
 
-1. **E-Commerce App Testing** - Playwright automation with AI-powered test generation
-2. **API Testing Suite** - REST Assured framework with comprehensive validation
-3. **JIRA Data Analysis** - Python-based analytics for QA process improvement
-4. **Jira-TestRail AI Integration** - AI-powered test case generation
-5. **AI-Enabled API Automation** - BDD framework with performance testing and reporting
+1. **RealAgents House Sales Pricing Model** — Regression pipeline with Scikit-Learn, Pandas & exploratory data analysis on real estate data
+2. **Tasty Bytes Recipe Traffic Prediction** — Classification model predicting high-traffic recipes for a food-tech platform
+3. **Neural Clothing Classifier** — PyTorch deep learning model achieving **88% accuracy** on fashion item classification (FashionMNIST)
 
-### Technologies Used
-- **Automation**: Playwright, Selenium, Cypress
-- **Languages**: Python, JavaScript, Java
-- **Testing**: BDD (Behave), REST Assured, JSON Schema Validation
-- **Reporting**: Allure Reports, HTML Reports
-- **CI/CD**: GitHub Actions, GitLab CI
-- **Data Analysis**: Pandas, NumPy, Matplotlib
-- **AI Integration**: OpenAI SDK, Grok AI
+---
 
-### Getting Started
+### Certifications
 
-1. Clone the repository
-2. Navigate to individual project folders for specific setup instructions
-3. Each project contains its own README with detailed implementation notes
+- 🏅 [Data Scientist Professional](https://www.datacamp.com/certificate/DS0021443906625) — DataCamp
+- 🏅 [Data Scientist Associate](https://www.datacamp.com/certificate/DSA0011392168138) — DataCamp
+- 🏅 [Deep Learning](https://www.datacamp.com/completed/statement-of-accomplishment/track/86f4bd24) — DataCamp
+- 🏅 [Natural Language Processing](https://www.datacamp.com/completed/statement-of-accomplishment/track/da50649) — DataCamp
+- 🏅 [Advanced NLP with spaCy](https://www.datacamp.com/completed/statement-of-accomplishment/course/97d9d741) — DataCamp
+- 🏅 [Prompt Engineering](https://www.linkedin.com/learning/certificates/967c543d) — LinkedIn Learning
+
+---
+
+### Technologies
+
+- **Languages:** Python, SQL
+- **ML / DL:** Scikit-Learn, PyTorch, TorchVision, TorchMetrics
+- **NLP:** spaCy, Pydub
+- **Data:** Pandas, NumPy, Matplotlib, Seaborn
+- **Tools:** Excel, Jupyter, Git
+
+---
+
+### Education
+
+**B.Tech Computer Science** — GLA University *(Aug 2022 – Present, CGPA 7.19)*
+
+---
 
 ### Contact
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/your-profile)
-- **GitHub**: [YdvVipin](https://github.com/YdvVipin)
+
+- 📧 [yadav.prateek2021@gmail.com](mailto:yadav.prateek2021@gmail.com)
+- 📞 +91 9368391328
+- 💼 [LinkedIn](https://linkedin.com/in/prateek-singh-yadav-551478204)
+- 🐙 [GitHub](https://github.com/iprateekyadav1)
+- 📍 Vrindavan, Uttar Pradesh, India
