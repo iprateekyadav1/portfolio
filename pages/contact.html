@@ -9,6 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style-enhancements.css">
+  <style>
+    /* Honeypot: invisible to humans, filled by bots → Web3Forms rejects them */
+    .kc-botcheck { position:absolute; left:-9999px; visibility:hidden; }
+    /* Spinner for loading state on the Send button */
+    @keyframes kc-spin { to { transform:rotate(360deg); } }
+    /* Prevent layout shift while the button shows the spinner */
+    #contact-form button[type="submit"] { min-width:160px; }
+  </style>
 </head>
 <body data-base-path="../">
 
@@ -41,6 +49,12 @@
 
           <!-- Form -->
           <form class="kc-form kc-fade" id="contact-form" action="#" method="POST" novalidate>
+            <!-- Web3Forms: API routing key -->
+            <input type="hidden" name="access_key" value="38a7d4b0-f9ff-4be6-aae4-13621df8a786">
+            <!-- Sets the sender display name in the auto-reply sent to the visitor -->
+            <input type="hidden" name="from_name" value="Prateek Yadav">
+            <!-- Honeypot: bots fill this checkbox; humans don't see it → spam rejected -->
+            <input type="checkbox" name="botcheck" class="kc-botcheck" tabindex="-1" autocomplete="off">
             <input type="text" name="name" id="cf-name" class="kc-input" placeholder="Your Name" required>
             <input type="email" name="email" id="cf-email" class="kc-input" placeholder="Your Email" required>
             <input type="text" name="subject" id="cf-subject" class="kc-input" placeholder="Subject">
@@ -51,19 +65,49 @@
             </button>
             <!-- Success / error messages -->
             <div id="cf-success" style="display:none;margin-top:12px;padding:14px 18px;border-radius:10px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.4);color:#10B981;font-weight:500;font-size:0.9rem;">
-              ✓ Your email client has opened with the message pre-filled. Hit Send to deliver it!
+              ✓ Message sent! I'll get back to you within 24 hours.
             </div>
             <div id="cf-error" style="display:none;margin-top:12px;padding:14px 18px;border-radius:10px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.35);color:#ef4444;font-weight:500;font-size:0.9rem;">
-              ✕ Please fill in your name, email and message before sending.
+              ✕ Something went wrong. Please try again.
             </div>
           </form>
 
           <script>
           (function () {
+            'use strict';
+
+            var ENDPOINT = 'https://api.web3forms.com/submit';
+
             var form    = document.getElementById('contact-form');
+            var btnEl   = form.querySelector('button[type="submit"]');
             var success = document.getElementById('cf-success');
             var error   = document.getElementById('cf-error');
 
+            // Store original button markup so we can restore it after loading
+            var originalBtnHTML = btnEl.innerHTML;
+
+            // ── Show one banner, hide the other ────────────────
+            function showBanner(el) {
+              success.style.display = 'none';
+              error.style.display   = 'none';
+              el.style.display      = 'block';
+              el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            // ── Toggle loading state on Send button ─────────────
+            function setLoading(on) {
+              btnEl.disabled = on;
+              btnEl.innerHTML = on
+                ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:kc-spin 0.8s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Sending\u2026'
+                : originalBtnHTML;
+            }
+
+            // ── Basic email format check ─────────────────────────
+            function isValidEmail(e) {
+              return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+            }
+
+            // ── Submit handler ───────────────────────────────────
             form.addEventListener('submit', function (e) {
               e.preventDefault();
 
@@ -72,33 +116,51 @@
               var subject = document.getElementById('cf-subject').value.trim();
               var message = document.getElementById('cf-message').value.trim();
 
-              // Hide previous messages
+              // Reset banners
               success.style.display = 'none';
               error.style.display   = 'none';
 
-              // Basic validation
+              // Client-side validation
               if (!name || !email || !message) {
-                error.style.display = 'block';
+                error.textContent = '\u2715 Please fill in your name, email and message.';
+                showBanner(error);
+                return;
+              }
+              if (!isValidEmail(email)) {
+                error.textContent = '\u2715 Please enter a valid email address.';
+                showBanner(error);
                 return;
               }
 
-              var to      = 'yadav.prateek2021@gmail.com';
-              var sub     = subject
-                ? encodeURIComponent('[Portfolio] ' + subject)
-                : encodeURIComponent('[Portfolio] Message from ' + name);
-              var body    = encodeURIComponent(
-                'Hi Prateek,\n\nName: ' + name +
-                '\nEmail: ' + email +
-                '\n\n' + message + '\n\n— Sent via portfolio contact form'
-              );
+              // Build FormData — auto-picks up access_key, from_name, botcheck
+              var data = new FormData(form);
 
-              window.location.href = 'mailto:' + to + '?subject=' + sub + '&body=' + body;
+              // Inject prefixed subject (override the raw visible field value)
+              data.delete('subject');
+              data.append('subject', subject
+                ? '[Portfolio] ' + subject
+                : '[Portfolio] New message from ' + name);
 
-              // Show confirmation and reset form after short delay
-              setTimeout(function () {
-                success.style.display = 'block';
-                form.reset();
-              }, 400);
+              setLoading(true);
+
+              fetch(ENDPOINT, { method: 'POST', body: data })
+                .then(function (r) { return r.json(); })
+                .then(function (json) {
+                  setLoading(false);
+                  if (json.success) {
+                    success.textContent = "\u2713 Message sent! I\u2019ll get back to you within 24 hours.";
+                    showBanner(success);
+                    form.reset();
+                  } else {
+                    error.textContent = '\u2715 ' + (json.message || 'Submission failed. Please try again.');
+                    showBanner(error);
+                  }
+                })
+                .catch(function () {
+                  setLoading(false);
+                  error.textContent = '\u2715 Network error. Check your connection and try again.';
+                  showBanner(error);
+                });
             });
           })();
           </script>
