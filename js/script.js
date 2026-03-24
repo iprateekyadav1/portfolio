@@ -4,6 +4,8 @@
 
 const GITHUB_USERNAME = 'iprateekyadav1';
 const GITHUB_API = 'https://api.github.com';
+// Repos hidden from the Projects page grid (own portfolio site isn't a deliverable)
+const EXCLUDED_REPOS = ['portfolio'];
 
 // ─── Base path for multi-page navigation ──────────
 const BASE = document.body.dataset.basePath || '';
@@ -258,7 +260,7 @@ async function loadGitHubData() {
 
     // Fetch languages in parallel
     if (gridEl) {
-      const langPromises = repos.filter(r => !r.fork).map(repo =>
+      const langPromises = repos.filter(r => !r.fork && !EXCLUDED_REPOS.includes(r.name)).map(repo =>
         fetchJSON(repo.languages_url).then(langs => ({ name: repo.name, langs }))
       );
       const langResults = await Promise.all(langPromises);
@@ -303,7 +305,7 @@ function renderRepos(repos) {
   if (!grid) return;
 
   grid.innerHTML = '';
-  const filtered = repos.filter(r => !r.fork);
+  const filtered = repos.filter(r => !r.fork && !EXCLUDED_REPOS.includes(r.name));
 
   if (filtered.length === 0) {
     grid.innerHTML = '<p class="kc-gh-empty">No public repositories found.</p>';

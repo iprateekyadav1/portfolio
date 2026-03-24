@@ -2,6 +2,16 @@
    Kinetic Cards — Portfolio Design System
    ═══════════════════════════════════════════════════ */
 
+/* ─── Baguede — Self-Hosted Grotesque Display Font ── */
+@font-face {
+  font-family: 'Baguede';
+  src: url('../fonts/Baguede.woff') format('woff'),
+       url('../fonts/Baguede.otf')  format('opentype');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ─── Variables ─────────────────────────────────── */
 :root {
   --kc-bg: #FAFAFA;
@@ -14,7 +24,7 @@
   --kc-accent-light: #818CF8;
   --kc-secondary: #EC4899;
   --kc-green: #10B981;
-  --kc-font: 'Space Grotesk', sans-serif;
+  --kc-font: 'Baguede', sans-serif;
   --kc-font-body: 'Inter', sans-serif;
   --kc-radius: 16px;
   --kc-radius-sm: 10px;
